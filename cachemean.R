@@ -29,7 +29,9 @@ main<-function(){
   makeV1 = makeVector(v1);
   meanV1 = cachemean(makeV1);
   v2 = c(8,4,2);
-  makeV2 = makeVector(v2);# this puts the vector
+  makeV2 = makeVector(v2);# this puts the vector v2 as a private variable within the function
+  # makeVector. The value can be retreived using makeV2$get
+  
   return(list(makeV1 = makeV1, meanV1=meanV1));
   
 }
